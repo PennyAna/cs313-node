@@ -2,11 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postage Price Calculator</title>
+    <link rel="stylesheet" href="../stylesheets/postage.css">
 </head>
 <body>
-    
+    <div id="container">
+        <label for="postalInput">Check Mail Prices <br><small>US First Class</small></label>
+        <form id="postalInput" action="">
+            <fieldset>
+                <legend>Weight</legend>
+                <label for="postalWeight">How heavy is your mail?</label>
+                <input type="range" id="postalWeight" name="postalWeight" min="0" max="100">
+            </fieldset>
+            <fieldset>
+                <legend>Type</legend> 
+                <label for="postalType">What type is your mail?</label>
+                <select name="postalType" id="postalType">
+                    <option id="stampedLetter" name="stampedLetter" value="1">First Class Letter-Stamped</option>
+                    <option id="meteredLetter" name="meteredLetter" value="2">First Class Letter-Metered</option>
+                    <option id="largeEnvelope" name="largeEnvelope" value="3">First Class Large Envelopes</option>
+                    <option id="packageService" name="packageService" value="4">First Class Package Service-Retail</option>
+                </select>
+            </fieldset>
+            <button type="button">Find Price</button>
+        </form>
+    </div>
+    <script src="./postage.js"></script>
 </body>
 </html>

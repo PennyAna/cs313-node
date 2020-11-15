@@ -1,0 +1,44 @@
+/* HEX */
+:root {
+	--color-dark: #0B0033; /*russian violet*/
+	--color-dark-alt: #4B1746; /*dark purple*/
+	--color-accent: #CB9CF2; /*bright lilac*/
+	--color-light: #CBF3F0; /*light cyan*/
+	--color-light-alt: #E09F7D; /*antique brass*/
+}
+body {
+
+}
+form {
+
+}
+fieldset {
+
+}
+legend {
+
+}
+label {
+
+}
+#postalInput {
+
+}
+#postalWeight {
+
+}
+#postalType {
+
+}
+#stampedLetter {
+
+}
+#meteredLetter {
+
+}
+#largeEnvelope {
+
+}
+#packageService {
+
+}
