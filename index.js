@@ -11,6 +11,10 @@ express()
   .get('/', (req, res) => res.render('pages/index'))
   .get('/cool', (req, res) => res.send(cool()))
   .get('/times', (req, res) => res.send(showTimes()))
+  .get('postage', (req, res) => res.send('public/postage.html'))
+  .get('postageTwo', (req, res) => res.send('public/postageTwo.html'))
+  .get('postjs', (req, res) => res.send('public/stylesheets/postage.js'))
+  .get('postcss', (req, res) => res.send('public/postage.css'))
   .get('/db', async (req, res) => {
 	  try {
 		  const client = await pool.connect();
@@ -23,6 +27,7 @@ express()
 		  res.send("Error " + err);
 	  }
   })
+ 
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 showTimes = () => {
