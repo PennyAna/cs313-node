@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <%- include('../partials/head'); %>
+	<%- include('../partials/head'); %>
 </head>
 <body class="container">
 
@@ -12,7 +12,8 @@
 <main>
     <div class="jumbotron">
         <h1>Postal Prices</h1>
-        <h2>US First Class</h2>
+		<h2>US First Class</h2>
+		<$- require('../../public/postage.js'); %>
 		<ul>
 			<% stampedLetter.forEach(function(stampedLetter) { %>
 			<li>
