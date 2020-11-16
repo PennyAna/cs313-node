@@ -1,10 +1,3 @@
-
-res.render('pages/price', {
-    stampedLetter: stampedLetter, 
-    meteredLetter: meteredLetter, 
-    largeEnvelope: largeEnvelope, 
-    packageService: packageService
-   }
 var stampedLetter = [
     {name: 'uptoOne', val: 1, price: '.55'},
     {name:'onetoTwo', val: 2, price: '.70'},
