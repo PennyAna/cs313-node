@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+    <%- include('../partials/header'); %>
+</header>
+
+<main>
+    <div class="jumbotron">
+        <h1>Postal Prices</h1>
+        <h2>US First Class</h2>
+		<ul>
+			<% stampedLetter.forEach(function(stampedLetter) { %>
+			<li>
+            <strong><%= stampedLetter.name %></strong>
+            representing <%= stampedLetter.val %>, price <%= stampedLetter.price %>
+			</li>
+			<% }); %>
+		</ul>
+		<ul>
+			<% meteredLetter.forEach(function(meteredLetter) { %>
+			<li>
+            <strong><%= meteredLetter.name %></strong>
+            representing <%= meteredLetter.val %>, price <%= meteredLetter.price %>
+			</li>
+			<% }); %>
+		</ul>
+		<ul>
+			<% largeEnvelope.forEach(function(largeEnvelope) { %>
+			<li>
+            <strong><%= largeEnvelope.name %></strong>
+            representing <%= largeEnvelope.val %>, price <%= largeEnvelope.price %>
+			</li>
+			<% }); %>
+		</ul>
+		<ul>
+			<% packageService.forEach(function(packageService) { %>
+			<li>
+            <strong><%= packageService.name %></strong>
+            representing <%= packageService.val %>, price <%= packageService.price %>
+			</li>
+			<% }); %>
+		</ul>
+    </div>
+</main>
+
+<footer>
+    <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
