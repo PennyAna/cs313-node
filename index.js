@@ -14,7 +14,7 @@ express()
   .get('postage', (req, res) => res.send('public/postage.html'))
   .get('postjs', (req, res) => res.send('public/stylesheets/postage.js'))
   .get('postcss', (req, res) => res.send('public/postage.css'))
-  .get('price', (req, res) => {
+  .get('/price', (req, res) => {
 	res.render('pages/price', {
     stampedLetter: stampedLetter, 
     meteredLetter: meteredLetter, 
