@@ -1,4 +1,3 @@
-const cool = require('cool-ascii-faces');
 const express = require('express')
 const path = require('path')
 const PORT = process.env.PORT || 5000
@@ -9,9 +8,8 @@ express()
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
-  .get('/cool', (req, res) => res.send(cool()))
   .get('/times', (req, res) => res.send(showTimes()))
-  .get('postage', (req, res) => res.send('public/postage.html'))
+ /*  .get('postage', (req, res) => res.send('public/postage.html'))
   .get('postjs', (req, res) => res.send('public/stylesheets/postage.js'))
   .get('postcss', (req, res) => res.send('public/postage.css'))
   .get('/price', (req, res) => {
@@ -20,7 +18,7 @@ express()
     meteredLetter: meteredLetter, 
     largeEnvelope: largeEnvelope, 
     packageService: packageService
-   })})	 
+   })})	  */
   .get('/db', async (req, res) => {
 	  try {
 		  const client = await pool.connect();

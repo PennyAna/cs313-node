@@ -1,0 +1,15 @@
+1. Briefly describe any pieces of the assignment that are not yet working correctly.
+I couldn't print the class info like I wanted to so it prints out as raw JSON data. 
+
+2. Briefly describe the "coolest" thing you learned while completing this assignment.
+I tried to use parse(res.url) a couple different ways but I couldn't make it work. Instead I checked for the req.url. 
+onRequest(req, res) {etc.}
+
+3. Describe anything you did to go above and beyond with this assignment.
+Added "Hello Puny Earthlings" to the end of the html document. I know, it's not much but I prefer it to Hello World. That got a little old after the first C++ class. 
+
+4. Please select the category you feel best describes your assignment:
+4 - Meets requirements
+
+5. Provide a brief justification (1-2 sentences) for selecting that category.
+I believe I have met all the requirements although I wish I had had time to spend formatting the data object.  
